@@ -12,6 +12,7 @@ import Graphic from '../Components/Elements/Graphic'
 import Hrsolution from '../Components/Elements/Hrsolution'
 import Chooseus from '../Components/Elements/Chooseus'
 import Workingprocedure from '../Components/Elements/Workingprocedure'
+import Feedbacks from '../Components/Elements/Feedbacks'
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
       <Graphic/> */}
         {/* <Hrsolution/> */}
         <Contactus/>
+        <Feedbacks/>
       <Founded/>
         
     </div>

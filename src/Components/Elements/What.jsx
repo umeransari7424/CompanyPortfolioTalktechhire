@@ -44,7 +44,7 @@ function What() {
           <div className="row text-center pb-5">
             <div>
               <h6 className="whatwedo">What We Do</h6>
-            </div>
+            </div> 
             <div>
               <h1>Services We Offer</h1>
             </div>
@@ -82,16 +82,13 @@ function What() {
                       <h3>UI/UX</h3>
                     </div>
                   </div>
-                </div>
-                <div class="card mx-1" >
-                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <div className="service-icon">
-                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
-                    </div>
-                    <div className="service-title">
-                      <h3>UI/UX</h3>
-                    </div>
+                  <div className="card-footer">
+                    <button class="learn-more">
+                      <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Learn More</span>
+                    </button>
                   </div>
                 </div>
                 <div class="card mx-1" >
@@ -104,6 +101,14 @@ function What() {
                       <h3>UI/UX</h3>
                     </div>
                   </div>
+                  <div className="card-footer">
+                    <button class="learn-more">
+                      <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Learn More</span>
+                    </button>
+                  </div>
                 </div>
                 <div class="card mx-1" >
                   <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
@@ -114,6 +119,33 @@ function What() {
                     <div className="service-title">
                       <h3>UI/UX</h3>
                     </div>
+                  </div>
+                  <div className="card-footer">
+                    <button class="learn-more">
+                      <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Learn More</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="card mx-1" >
+                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div className="service-icon">
+                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
+                    </div>
+                    <div className="service-title">
+                      <h3>UI/UX</h3>
+                    </div>
+                  </div>
+                  <div className="card-footer">
+                    <button class="learn-more">
+                      <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Learn More</span>
+                    </button>
                   </div>
                 </div>
                 <div class="card mx-1">
@@ -126,16 +158,13 @@ function What() {
                       <h3>UI/UX</h3>
                     </div>
                   </div>
-                </div>
-                <div class="card mx-1" >
-                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <div className="service-icon">
-                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
-                    </div>
-                    <div className="service-title">
-                      <h3>UI/UX</h3>
-                    </div>
+                  <div className="card-footer">
+                    <button class="learn-more">
+                      <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Learn More</span>
+                    </button>
                   </div>
                 </div>
                 <div class="card mx-1" >
@@ -148,75 +177,34 @@ function What() {
                       <h3>UI/UX</h3>
                     </div>
                   </div>
+                  <div className="card-footer">
+                    <button class="learn-more">
+                      <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Learn More</span>
+                    </button>
+                  </div>
                 </div>
-
-                {/* <div className="card text-centerp mx-1">
-            
-              <div className="d-flex justify-content-center">
-                <div className="web">
-                  <img src="/Assets/Web.png" alt="web" className="img-fluid" />
+                <div class="card mx-1" >
+                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div className="service-icon">
+                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
+                    </div>
+                    <div className="service-title">
+                      <h3>UI/UX</h3>
+                    </div>
+                  </div>
+                  <div className="card-footer">
+                    <button class="learn-more">
+                      <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Learn More</span>
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <br />
-              <div>
-                <h4>Web Design & Development</h4>
-              </div>
-            </div>
-            <div className="card text-center p-4 mx-1">
-              <div className="d-flex justify-content-center">
-                <div className="web">
-                  <img src="/Assets/digital.png" alt="web" className="img-fluid" />
-                </div>
-              </div>
-              <br />
-              <div>
-                <h4>Digital <br />
-                  Marketing</h4>
-              </div>
-            </div>
-            <div className="card text-center p-4 mx-1">
-              <div className="d-flex justify-content-center">
-                <div className="web">
-                  <img src="/Assets/content.png" alt="web" className="img-fluid" />
-                </div>
-              </div>
-              <br />
-
-              <div>
-                <h4>Content <br />
-                  Writing</h4>
-              </div>
-            </div>
-            <div className="card text-center p-4 mx-1">
-              <div className="d-flex justify-content-center">
-                <div className="web">
-                  <img src="/Assets/uiux.png" alt="web" className="img-fluid" />
-                </div>
-              </div>
-              <br />
-
-              <div>
-                <h4>Graphic &
-                  UI/UX Design</h4>
-              </div>
-            </div>
-            <div className="card text-center p-4 mx-1">
-              <div className="d-flex justify-content-center">
-                <div className="web">
-                  <img src="/Assets/Web.png" alt="web" className="img-fluid" />
-                </div>
-              </div>
-              <br />
-
-              <div>
-                <h4>HR <br /> Solutions</h4>
-              </div>
-            </div> */}
-
-
-
-
-
               </Carousel>
             </div>
             <div className="arrow-navigation gap-2">
