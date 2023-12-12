@@ -27,7 +27,7 @@ function Workingprocedure() {
 
                         </div>
                     </div>
-                    <div className='col-md-4 process-design '>
+                    <div className='col-md-4 process-design1 '>
                         <div className="item">
                             <div className="thumb">
                                 <img src="/Assets/process-02.jpg" alt="process1" className='process ' />
@@ -38,7 +38,7 @@ function Workingprocedure() {
 
                         </div>
                     </div>
-                    <div className='col-md-4 process-design '>
+                    <div className='col-md-4 process-design2 '>
                         <div className="item">
                             <div className="thumb">
                                 <img src="/Assets/process-03.jpg" alt="process1" className='process01 ' />
