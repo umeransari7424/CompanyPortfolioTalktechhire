@@ -78,7 +78,7 @@ function Feedbacks() {
                   </div>
                   <br />
                   <div className=" d-flex justify-content-center align-items-center">
-                <h4 className="w-50">Lorem Ipsum is simply dummy text  of the printing and typesetting industry. 
+                <h4 className="w-50 client-feedback">Lorem Ipsum is simply dummy text  of the printing and typesetting industry. 
                    It is a long established fact that  a reader will be distracted by
                     the readable its layout.</h4>
                 </div>

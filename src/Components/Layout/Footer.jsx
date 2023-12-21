@@ -16,45 +16,45 @@ function Footer() {
               src="/Assets/Logo-white-word-PNG.png"
               alt="logo"
               className="img-fluid mb-4 "
-              style={{ width: "350px" }}
+              style={{ width: "300px" }}
             />
           </div>
-
           <br />
           <br />
           <div>
-            <h4>
+            <h5>
               We are a creative bunch of individuals on the mission to empower{" "}
               <br /> businesses around the globe by leveraging the power of
               technology.
-            </h4>
+            </h5>
           </div>
         </div>
         <br />
 
         <div className="row d-flex justify-content-center">
           <div className="col-md-3 text-start ">
-            <h2>COMPANY</h2>
+            <h4>COMPANY</h4>
             <ul className="list-unstyled " style={{ lineHeight: 2.8 }}>
-              <li>Work</li>
-              <li>About</li>
-              <li>Career</li>
-              <li>Contact</li>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Services</li>
+              <li>Contact Us</li>
             </ul>
           </div>
           <div className="col-md-3 text-start ">
-            <h2>SERVICES</h2>
+            <h4>SERVICES</h4>
             <ul className="list-unstyled " style={{ lineHeight: 2.8 }}>
               <li>Graphic & UI/UX Design</li>
               <li>Web Design & Development</li>
-              <li>Content Writing</li>
               <li>Digital Marketing</li>
+              <li>SEO</li>
+              <li>Content Writing</li>
               <li>HR Solutions</li>
             </ul>
 
           </div>
           <div className="col-md-3 text-start ">
-            <h2>CONTACT</h2>
+            <h4>CONTACT</h4>
             <ul className="list-unstyled " style={{ lineHeight: 2.8 }}>
               <li><RiUserLocationFill size={"35px"} /> Islamabad</li>
               <li><BiSolidPhone size={"35px"}/> +92 1234567890</li>

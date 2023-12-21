@@ -13,12 +13,14 @@ import Hrsolution from '../Components/Elements/Hrsolution'
 import Chooseus from '../Components/Elements/Chooseus'
 import Workingprocedure from '../Components/Elements/Workingprocedure'
 import Feedbacks from '../Components/Elements/Feedbacks'
+import Websitefaqs from '../Components/Elements/Websitefaqs'
 
 function Home() {
   return (
     <div>
         <Hero/>
         {/* <Services/> */}
+        {/* <Hero2/> */}
         <Aboutus/>
         <Chooseus/>
         <Workingprocedure/>
@@ -29,8 +31,9 @@ function Home() {
       <Graphic/> */}
         {/* <Hrsolution/> */}
         <Contactus/>
-        <Feedbacks/>
       <Founded/>
+        <Feedbacks/>
+      <Websitefaqs/>
         
     </div>
   )

@@ -9,7 +9,7 @@ function Hero() {
     });
   }, []);
   return (
-    <div className="hero overlay">
+    <div className="hero overlay" id="hero">
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-md-5 hero1 text-center">

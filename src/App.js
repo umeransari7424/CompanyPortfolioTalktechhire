@@ -3,8 +3,8 @@ import "./App.scss";
 import Base from "./Components/Layout/Base";
 import Home from "./Pages/Home";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle'
-import Typewriter from 'typewriter-effect/dist/core';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import Contactuspage from "./Pages/Contactuspage";
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
         <Base>
           <Routes>
             <Route index path="/" element={<Home />} />
+            {/* <Route index path="/contactus" element={<Contactuspage />} /> */}
           </Routes>
         </Base>
       </BrowserRouter>

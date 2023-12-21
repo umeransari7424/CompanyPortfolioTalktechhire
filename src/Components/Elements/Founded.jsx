@@ -11,7 +11,7 @@ function Founded() {
             <div className="row">
                 <div className="card py-5 ">
                     <div className='d-flex justify-content-between foundcard'>
-                    <div className='d-flex gap-2 '>
+                    <div className='d-flex gap-2 mb-4'>
                         <div className='rocket'>
                             <BsRocketTakeoffFill  size={'30px'} className='rocicon'/> 
                         </div>

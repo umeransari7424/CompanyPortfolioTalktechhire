@@ -38,7 +38,7 @@ function What() {
     }
   };
   return (
-    <div className="what">
+    <div className="what" id="services">
       <div className="what1">
         <div className="container-fluid  py-5 ">
           <div className="row text-center pb-5">
@@ -79,7 +79,7 @@ function What() {
                       <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
-                      <h3>UI/UX</h3>
+                      <h4>UI/UX Designer</h4>
                     </div>
                   </div>
                   <div className="card-footer">
@@ -98,7 +98,7 @@ function What() {
                       <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
-                      <h3>UI/UX</h3>
+                      <h4>Web Development</h4>
                     </div>
                   </div>
                   <div className="card-footer">
@@ -117,7 +117,7 @@ function What() {
                       <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
-                      <h3>UI/UX</h3>
+                      <h4>App Development</h4>
                     </div>
                   </div>
                   <div className="card-footer">
@@ -136,7 +136,7 @@ function What() {
                       <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
-                      <h3>UI/UX</h3>
+                      <h4>Content Writing</h4>
                     </div>
                   </div>
                   <div className="card-footer">
@@ -155,7 +155,7 @@ function What() {
                       <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
-                      <h3>UI/UX</h3>
+                      <h4>SEO</h4>
                     </div>
                   </div>
                   <div className="card-footer">
@@ -174,7 +174,7 @@ function What() {
                       <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
-                      <h3>UI/UX</h3>
+                      <h4>Digital Marketing</h4>
                     </div>
                   </div>
                   <div className="card-footer">
@@ -193,7 +193,7 @@ function What() {
                       <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
-                      <h3>UI/UX</h3>
+                      <h4>HR Solution</h4>
                     </div>
                   </div>
                   <div className="card-footer">

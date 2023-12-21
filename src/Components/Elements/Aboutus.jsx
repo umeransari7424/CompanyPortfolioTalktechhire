@@ -3,7 +3,7 @@ import { FaGitter } from "react-icons/fa6";
 
 function Aboutus() {
   return (
-    <div className="aboutus">
+    <div className="aboutus" id="aboutus">
       <div className="container py-5 ">
         <div className="row ">
           <div className="col-md-6 pt-4">
