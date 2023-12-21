@@ -62,7 +62,7 @@ function Chooseus() {
               <Carousel
                 ref={carouselRef}
                 responsive={responsive}
-                // autoPlay="true"
+                autoPlay="true"
                 interval={2000}
                 infinite="true"
                 arrows={false}
