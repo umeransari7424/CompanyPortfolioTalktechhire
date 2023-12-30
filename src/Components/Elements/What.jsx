@@ -57,7 +57,7 @@ function What() {
               <Carousel
                 ref={carouselRef}
                 responsive={responsive}
-                autoPlay="true"
+                // autoPlay="true"
                 interval={2000}
                 infinite="true"
                 // rewind={true}
@@ -73,10 +73,10 @@ function What() {
 
               >
                 <div class="card mx-1" >
-                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
+                  <img src="/Assets/uiuxbg.jpg" class="card-img-top" alt="bg-img" style={{height:"222px"}} />
                   <div class="card-body">
                     <div className="service-icon">
-                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
+                      <img src="/Assets/uiux1.png" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
                       <h4>UI/UX Designer</h4>
@@ -92,10 +92,10 @@ function What() {
                   </div>
                 </div>
                 <div class="card mx-1" >
-                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
+                  <img src="/Assets/webbg.jpg" class="card-img-top" alt="website" style={{height:"222px"}} />
                   <div class="card-body">
                     <div className="service-icon">
-                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
+                      <img src="/Assets/web1.png" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
                       <h4>Web Development</h4>
@@ -111,10 +111,10 @@ function What() {
                   </div>
                 </div>
                 <div class="card mx-1" >
-                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
+                  <img src="/Assets/mobilebg.jpg" class="card-img-top" alt="mobile" style={{height:"222px"}}/>
                   <div class="card-body">
                     <div className="service-icon">
-                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
+                      <img src="/Assets/mobile1.png" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
                       <h4>App Development</h4>
@@ -130,10 +130,10 @@ function What() {
                   </div>
                 </div>
                 <div class="card mx-1" >
-                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
+                  <img src="/Assets/contentbg.jpg" class="card-img-top" alt="content" style={{height:"222px"}} />
                   <div class="card-body">
                     <div className="service-icon">
-                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
+                      <img src="/Assets/content1.png" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
                       <h4>Content Writing</h4>
@@ -149,10 +149,10 @@ function What() {
                   </div>
                 </div>
                 <div class="card mx-1">
-                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
+                  <img src="/Assets/seobg.jpg" class="card-img-top" alt="seo"  style={{height:"222px"}}/>
                   <div class="card-body">
                     <div className="service-icon">
-                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
+                      <img src="/Assets/seo1.png" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
                       <h4>SEO</h4>
@@ -168,10 +168,10 @@ function What() {
                   </div>
                 </div>
                 <div class="card mx-1" >
-                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
+                  <img src="/Assets/digitalbg.jpg" class="card-img-top" alt="digital" style={{height:"222px"}} />
                   <div class="card-body">
                     <div className="service-icon">
-                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
+                      <img src="/Assets/digital2.png" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
                       <h4>Digital Marketing</h4>
@@ -187,10 +187,10 @@ function What() {
                   </div>
                 </div>
                 <div class="card mx-1" >
-                  <img src="/Assets/uiux-carousal.jpg" class="card-img-top" alt="..." />
+                  <img src="/Assets/hrbg.png" class="card-img-top" alt="hr" style={{height:"222px"}} />
                   <div class="card-body">
                     <div className="service-icon">
-                      <img src="/Assets/service-icon.svg" alt="service" className="img-fluid " decoding="async" />
+                      <img src="/Assets/hr1.png" alt="service" className="img-fluid " decoding="async" />
                     </div>
                     <div className="service-title">
                       <h4>HR Solution</h4>

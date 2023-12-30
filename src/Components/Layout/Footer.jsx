@@ -3,7 +3,9 @@ import {RiUserLocationFill} from 'react-icons/ri'
 import {HiMail} from 'react-icons/hi'
 import {BiSolidPhone} from 'react-icons/bi'
 import {FaFacebookF , FaLinkedinIn} from 'react-icons/fa'
-import {BsInstagram , BsTwitter} from 'react-icons/bs'
+import {BsInstagram } from 'react-icons/bs'
+import { RiTwitterXFill } from "react-icons/ri";
+
 
 function Footer() {
   return (
@@ -59,7 +61,7 @@ function Footer() {
               <li><RiUserLocationFill size={"35px"} /> Islamabad</li>
               <li><BiSolidPhone size={"35px"}/> +92 1234567890</li>
               <li><HiMail size={'35px'}/>  talktechhire@gmail.comm</li> <br />
-              <li className="d-flex gap-3"><FaFacebookF size={'35px'} color="white"/> <BsInstagram size={'35px'}/> <BsTwitter size={'35px'}/> <FaLinkedinIn size={'35px'}/></li>
+              <li className="d-flex gap-3"><FaFacebookF size={'35px'} color="white"/> <BsInstagram size={'35px'}/> <RiTwitterXFill size={'35px'}/> <FaLinkedinIn size={'35px'}/></li>
             </ul>
           </div>
         </div>

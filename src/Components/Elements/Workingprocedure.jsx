@@ -20,7 +20,7 @@ function Workingprocedure() {
                         <div className="item">
                             <div className="thumb">
                                 <img src="/Assets/process-01.jpg" alt="process1" className='process01 ' />
-                                <span className='one'>01</span>
+                                {/* <span className='one'>01</span> */}
                             </div>
                             <h4>Design</h4>
                             <p className='w-75 mx-auto mb-0'>We focus on the best practices for it solutions and services</p>
@@ -31,7 +31,7 @@ function Workingprocedure() {
                         <div className="item">
                             <div className="thumb">
                                 <img src="/Assets/process-02.jpg" alt="process1" className='process ' />
-                                <span className='one'>02</span>
+                                {/* <span className='one'>02</span> */}
                             </div>
                             <h4 className='pt-3'>Design</h4>
                             <p className='w-75 mx-auto mb-0'>We focus on the best practices for it solutions and services</p>
@@ -42,7 +42,7 @@ function Workingprocedure() {
                         <div className="item">
                             <div className="thumb">
                                 <img src="/Assets/process-03.jpg" alt="process1" className='process01 ' />
-                                <span className='one'>03</span>
+                                {/* <span className='one'>03</span> */}
                             </div>
                             <h4>Design</h4>
                             <p className='w-75 mx-auto mb-0'>We focus on the best practices for it solutions and services</p>
