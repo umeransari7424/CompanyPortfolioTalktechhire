@@ -58,7 +58,7 @@ function Chooseus() {
 
             </div>
             <div className="row">
-              <div className="carousal-container ">
+              <div className="carousal-container">
                 <Carousel
                   ref={carouselRef}
                   responsive={responsive}

@@ -12,9 +12,6 @@ function Footer() {
     <div className="footer">
       <div className="footer1">
       <div className="container-fluid text-center px-5 pt-5">
-       
-     
-
         <div className="row d-flex justify-content-around">
         <div className="col-md-3 text-start">
           <div>
@@ -52,7 +49,6 @@ function Footer() {
               <li>HR Solutions</li>
               <li>SEO</li>
             </ul>
-
           </div>
           <div className="col-md-3 text-start ">
             <h4>CONTACT</h4>

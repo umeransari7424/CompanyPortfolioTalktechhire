@@ -1,4 +1,4 @@
-import React, { useState , useRef} from "react";
+import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaLocationDot } from 'react-icons/fa6'
@@ -7,6 +7,7 @@ import { FloatingLabel, Form } from "react-bootstrap";
 import { RiTwitterXFill } from "react-icons/ri";
 import { GrInstagram } from "react-icons/gr";
 import { FaFacebookF } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 
 function Contactus() {
@@ -14,32 +15,32 @@ function Contactus() {
   const form = useRef();
 
   const [formData, setFormData] = useState({
-    name: "",
-    subject: "",
-    email: "",  // Fixed the typo in "email"
-    comment:"",
+    to_name: "",
+    to_subject: "",
+    to_email: "",  // Fixed the typo in "email"
+    message: "",
   });
-  
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
-  };
-  
-  
-  const handleSubmit = (e) => {
-    console.log("i am handle submit" ,formData)
+  };  
+  const sendEmail = async (e) => {
     e.preventDefault();
-// service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service 
-emailjs.send('service_zfu5wv3', 'template_vjh0ysl', formData, 
-'EGat--fp_CDZkXm21')
-  .then((result) => {
-      console.log(result.text);
-  }, (error) => {
-      console.log(error.text);
-  });
-  }
+    try {
+      const result = await emailjs.sendForm('service_zfu5wv3', 'template_9hwtco5', form.current, 'EGat--fp_CDZkXm21')
+      .then((result)=>{
+        console.log(result.text);
+        toast.success("Message sent Successfully");
+        form.current.reset()
+      })
+    } catch (error) {
+      console.error(error.text);
+      toast.error("Error sending message");
+    }
+  };
   return (
     <div className="contactus" id="contactus">
       <div className="container-fluid text-center py-5 mt-5">
@@ -135,67 +136,84 @@ emailjs.send('service_zfu5wv3', 'template_vjh0ysl', formData,
             </div>
           </div>
           <div className="col-md-7 pt-5 text-start mt-5">
-            <Form onClick={handleSubmit} ref={form}>
-            <div className="d-flex gap-4 ract-input">
-              <div className="w-100">
-                <FloatingLabel
-                  controlId="floatingInput"
-                  label="Name"
-                  className="mb-3 myinput"
-                >
-                  <Form.Control type="text" name="name" onChange={handleChange} value={formData.name} placeholder="Name" />
-                </FloatingLabel>
-              </div>
-              <div className="w-100">
-                <FloatingLabel
-                  controlId="floatingInput"
-                  label="Your Subject"
-                  className="mb-3"
-                >
-                  <Form.Control type="text" placeholder="Your Subject" name="subject" onChange={handleChange} value={formData.subject} />
-                </FloatingLabel>
-              </div>
-            </div>
-            <div className="d-flex gap-4 ract-input">
-              <div className="w-100">
-                <FloatingLabel
-                  controlId="floatingInput"
-                  label="Your Email"
-                  className="mb-3"
-                >
-                  <Form.Control type="text" placeholder="Your Email" name="email" onChange={handleChange} value={formData.email} />
-                </FloatingLabel>
-              </div>
-            </div>
-            <div>
-              <div className="w-100">
-                <FloatingLabel controlId="floatingTextarea2" label="Leave a comment here">
-                  <Form.Control
-                    as="textarea"
-                    // placeholder="Leave a comment here"
-                    name="comment"
-                    value={formData.comment}
-                    onChange={handleChange}
-                    style={{ height: '130px' }}
-                  />
-                </FloatingLabel>
-              </div>
-
-            </div> <br />
-            <div className="d-flex justify-content-end">
-              <button className="sendbutton" >
-                <div class="svg-wrapper-1">
-                  <div class="svg-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                    </svg>
-                  </div>
+          {/* <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form> */}
+            <Form ref={form}  >
+              <div className="d-flex gap-4 ract-input">
+                <div className="w-100">
+                  <FloatingLabel
+                    controlId="floatingInput"
+                    label="Name"
+                    className="mb-3 myinput"
+                  >
+                    <Form.Control type="text" required name="to_name" 
+                    // onChange={handleChange} value={formData.name} 
+                    placeholder="Name" />
+                  </FloatingLabel>
                 </div>
-                <span>Send</span>
-              </button>
+                <div className="w-100">
+                  <FloatingLabel
+                    controlId="floatingInput"
+                    label="Your Subject"
+                    className="mb-3"
+                  >
+                    <Form.Control type="text" required placeholder="Your Subject" name="to_subject" 
+                    // onChange={handleChange} value={formData.subject}
+                     />
+                  </FloatingLabel>
+                </div>
+              </div>
+              <div className="d-flex gap-4 ract-input">
+                <div className="w-100">
+                  <FloatingLabel
+                    controlId="floatingInput"
+                    label="Your Email"
+                    className="mb-3"
+                  >
+                    <Form.Control type="text" required placeholder="Your Email"
+                     name="to_email" 
+                    //  onChange={handleChange} value={formData.email}
+                      />
+                  </FloatingLabel>
+                </div>
+              </div>
+              <div>
+                <div className="w-100">
+                  <FloatingLabel controlId="floatingTextarea2" label="Leave a comment here">
+                    <Form.Control
+                      as="textarea"
+                      placeholder="Leave a comment here"
+                      name="message"
+                      required
+                      // value={formData.message}
+                      // onChange={handleChange}
+                      style={{ height: '130px' }}
+                    />
+                  </FloatingLabel>
+                </div>
 
-            </div>
+              </div> <br />
+              <div className="d-flex justify-content-end">
+                <button className="sendbutton" type="submit" onClick={sendEmail}>
+                  <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <span>Send</span>
+                </button>
+
+              </div>
             </Form>
           </div>
         </div>
