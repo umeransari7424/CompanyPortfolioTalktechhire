@@ -1,7 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
 const responsive = {
   superLargeDesktop: {
@@ -23,85 +22,68 @@ const responsive = {
   }
 };
 function Feedbacks() {
-  const carouselRef = useRef(null);
 
-  const goToPrevSlide = () => {
-    if (carouselRef.current) {
-      carouselRef.current.previous();
-    }
-  };
-
-  const goToNextSlide = () => {
-    if (carouselRef.current) {
-      carouselRef.current.next();
-    }
-  };
   return (
     <div className="feedback">
       <div className="feedback1">
-     <div className="container-fluid py-5">
-     <div className="row text-center pb-5">
+        <div className="container-fluid py-5">
+          <div className="row text-center pb-5">
             <div>
               <h6 className="whatwedo">Feedbacks</h6>
             </div>
             <div>
               <h1>What our Clients Say</h1>
             </div>
-            
           </div>
-     <div className="row d-flex justify-content-center text-center carousal-row pb-5">
+          <div className="row d-flex justify-content-center text-center carousal-row pb-5">
             <div className="carousal-container">
               <Carousel
-                ref={carouselRef}
                 responsive={responsive}
                 autoPlay="true"
                 interval={2000}
                 infinite="true"
-                // rewind={true}
-                // axis="horizontal"
-                // labels={false}
-                // customTransition="all .35"
-                // transitionDuration={500}
-                // autoPlaySpeed={1000}
                 arrows={true}
-              // showStatus={false}
-              // showIndicators={false}
-              // showThumbs={false} 
-
               >
                 <div className="client-img ">
                   <div>
-                <img src="//c2.staticflickr.com/8/7310/buddyicons/24846422@N06_r.jpg" class="center-block img-circle" alt="Customer Feedback" />
+                    <img src="/Assets/avatar-01.jpg" class="center-block img-circle" alt="Customer Feedback" />
                   </div> <br />
                   <div>
-                <h3 class="customer-name">Lisa Redfern</h3>
+                    <h3 class="customer-name">Skye Finney</h3>
                   </div>
                   <br />
                   <div className=" d-flex justify-content-center align-items-center">
-                <h4 className="w-50 client-feedback">Lorem Ipsum is simply dummy text  of the printing and typesetting industry. 
-                   It is a long established fact that  a reader will be distracted by
-                    the readable its layout.</h4>
-                </div>
+                    <h4 className="w-50 client-feedback">Man, this thing is getting better and better as I learn more about it. We were treated like royalty. IT solution should be nominated for service of the year. I made back the purchase price in just 48 hours!</h4>
                   </div>
-
-               
+                </div>
+                <div className="client-img ">
+                  <div>
+                    <img src="//c2.staticflickr.com/8/7310/buddyicons/24846422@N06_r.jpg" class="center-block img-circle" alt="Customer Feedback" />
+                  </div> <br />
+                  <div>
+                    <h3 class="customer-name">Lisa Redfern</h3>
+                  </div>
+                  <br />
+                  <div className=" d-flex justify-content-center align-items-center">
+                    <h4 className="w-50 client-feedback">It's the perfect solution for our business. Just what I was looking for. We were treated like royalty. Absolutely wonderful! It really saves me time and effort. business is exactly what our business has been lacking.</h4>
+                  </div>
+                </div>
+                <div className="client-img ">
+                  <div>
+                    <img src="/Assets/avatar-03.jpg" class="center-block img-circle" alt="Customer Feedback" />
+                  </div> <br />
+                  <div>
+                    <h3 class="customer-name">Tyson Perivolaris</h3>
+                  </div>
+                  <br />
+                  <div className=" d-flex justify-content-center align-items-center">
+                    <h4 className="w-50 client-feedback">IT solution is the most valuable business resource we have EVER purchased. I am completely blown away. I love your system. It's exactly what I've been looking for. I love business. It really saves me time and effort.</h4>
+                  </div>
+                </div>
               </Carousel>
             </div>
-            {/* <div className="arrow-navigation gap-2">
-              <div>
-                <div className="arrow-left pb-1" onClick={goToPrevSlide}>
-                  <BsArrowLeft size={'30px'} className="pt-1 arrow" />
-                </div>
-              </div>
-              <div>
-                <div className="arrow-right pb-1" onClick={goToNextSlide}>
-                  <BsArrowRight size={'30px'} className="pt-1 arrow" />
-                </div>
-              </div>
-            </div> */}
-
           </div>
-     </div>
+        </div>
       </div>
     </div>
   )

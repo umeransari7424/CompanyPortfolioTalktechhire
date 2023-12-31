@@ -1,5 +1,7 @@
 import React from "react";
 import { FaGitter } from "react-icons/fa6";
+import { FaUnity } from "react-icons/fa6";
+
 
 function Aboutus() {
   return (
@@ -21,7 +23,7 @@ function Aboutus() {
                 </div>
                 <div>
                   <h4>Our Mission</h4>
-                  <p>Our Mission is to be the industry’s top-ratede provider issuer enterprise targeting satisfying the most to our clients.</p>
+                  <p>Our Mission is to be the industry’s top-rated provider issuer enterprise targeting satisfying the most to our clients.</p>
                 </div>
 
               </div>  
@@ -30,11 +32,11 @@ function Aboutus() {
             <div className="card py-3 px-2">
               <div className="d-flex gap-4">
                 <div className="d-flex justify-content-center pt-2  ">
-                  <FaGitter className="about-icon p-2"   color="white" size={55}/>
+                  <FaUnity className="about-icon p-2"   color="white" size={55}/>
                 </div>
                 <div>
-                  <h4>Our Mission</h4>
-                  <p>Our Mission is to be the industry’s top-ratede provider issuer enterprise targeting satisfying the most to our clients.</p>
+                  <h4>Our Vission</h4>
+                  <p>Our Vision is to be a top Web Design company in the IT sector and progress in our current position in the market.</p>
                 </div>
 
               </div>  
@@ -52,7 +54,7 @@ function Aboutus() {
               </h5>
             </div> */}
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 about-column">
             <div className="p-3 about1">
               <img
                 src="/Assets/about1.jpg"

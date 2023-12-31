@@ -14,12 +14,14 @@ import Chooseus from '../Components/Elements/Chooseus'
 import Workingprocedure from '../Components/Elements/Workingprocedure'
 import Feedbacks from '../Components/Elements/Feedbacks'
 import Websitefaqs from '../Components/Elements/Websitefaqs'
+import ScrollToTopButton from '../Components/Elements/ScrollToTopButton'
 
 function Home() {
   return (
     <div>
         <Hero/>
         {/* <Services/> */}
+        <ScrollToTopButton/>
         {/* <Hero2/> */}
         <Aboutus/>
         <Chooseus/>
@@ -34,6 +36,7 @@ function Home() {
       <Founded/>
         <Feedbacks/>
       <Websitefaqs/>
+
         
     </div>
   )

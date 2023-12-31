@@ -12,46 +12,45 @@ function Footer() {
     <div className="footer">
       <div className="footer1">
       <div className="container-fluid text-center px-5 pt-5">
-        <div className="row ">
+       
+     
+
+        <div className="row d-flex justify-content-around">
+        <div className="col-md-3 text-start">
           <div>
             <img
               src="/Assets/Logo-white-word-PNG.png"
               alt="logo"
               className="img-fluid mb-4 "
-              style={{ width: "300px" }}
+              style={{ width: "200px" }}
             />
           </div>
-          <br />
-          <br />
+  
           <div>
             <h5>
-              We are a creative bunch of individuals on the mission to empower{" "}
-              <br /> businesses around the globe by leveraging the power of
+              We are a creative bunch of individuals on the mission to empower businesses around the globe by leveraging the power of
               technology.
             </h5>
           </div>
         </div>
-        <br />
-
-        <div className="row d-flex justify-content-center">
-          <div className="col-md-3 text-start ">
+          <div className="col-md-2 text-start ">
             <h4>COMPANY</h4>
             <ul className="list-unstyled " style={{ lineHeight: 2.8 }}>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Contact Us</li>
+              <li ><a href='#hero'>Home</a></li>
+              <li><a href="#aboutus">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href='#contactus'>Contact Us</a></li>
             </ul>
           </div>
           <div className="col-md-3 text-start ">
             <h4>SERVICES</h4>
             <ul className="list-unstyled " style={{ lineHeight: 2.8 }}>
-              <li>Graphic & UI/UX Design</li>
-              <li>Web Design & Development</li>
+              <li>Web & Mobile Development</li>
               <li>Digital Marketing</li>
-              <li>SEO</li>
               <li>Content Writing</li>
+              <li>UI/UX Design</li>
               <li>HR Solutions</li>
+              <li>SEO</li>
             </ul>
 
           </div>
@@ -60,7 +59,7 @@ function Footer() {
             <ul className="list-unstyled " style={{ lineHeight: 2.8 }}>
               <li><RiUserLocationFill size={"35px"} /> Islamabad</li>
               <li><BiSolidPhone size={"35px"}/> +92 1234567890</li>
-              <li><HiMail size={'35px'}/>  talktechhire@gmail.comm</li> <br />
+              <li><HiMail size={'35px'}/> talktechhire@gmail.com</li> <br />
               <li className="d-flex gap-3"><FaFacebookF size={'35px'} color="white"/> <BsInstagram size={'35px'}/> <RiTwitterXFill size={'35px'}/> <FaLinkedinIn size={'35px'}/></li>
             </ul>
           </div>

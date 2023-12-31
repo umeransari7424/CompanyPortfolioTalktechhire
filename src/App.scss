@@ -43,9 +43,6 @@
 
   }
 }
-
-
-
 .hero {
   background-image: url('./Media/graphic-designers-meeting.svg');
   background-position: center;
@@ -125,81 +122,6 @@
     transform: translateX(0);
    }
 }
-
-.contacthero{
-  background-image: url('./Media/contact us.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background-color: black;
-  color: white;
-
-  height: 110vh;
-  // z-index: 1;
-  overflow: hidden;
-  position: relative;
-  margin-top: -80px;
-
-  &::after{
-    position: absolute;
-    content: '';
-    width: 100%; /* Adjust the size of the circle */
-    height: 100%;
-    top: 0;
-      background-color: transparent;
-      background-image: linear-gradient(-90deg, #02010100 0%, #0C3246 100%);
-      opacity: 0.8;
-      // transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-  
-  }
-
-  .contact{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 90vh;
-  }
- ul {
-    margin: 0;
-    padding: 11px 20px;
-    display: flex;
-    list-style: none;
-    // display: inline-block;
-    font-size: 25px;
-    font-weight: 600;
-    gap: 30px;
-    line-height: 1.2;
-    background: rgba(255,255,255,0.2);
-    position: relative;
-    z-index: 9;
-}
-a{
-  text-decoration: none !important;
-  color: white !important;
-}
-
-.contactlist{
-  &::before {
-  content: '';
-  width: 10px; /* Adjust the size of the circle */
-  height: 10px; /* Adjust the size of the circle */
-  background-color: #18455D;
-  border-radius: 50%; /* Make it a circle */
-  display: inline-block;
-  margin-right: 15px; 
-  margin-bottom: 3px;
-}}
-
-  h1{
-    position: relative;
-    z-index: 110;
-    font-size: 55px !important;
-    font-weight: 600 !important;
-  }
-
-}
-
 .service-col {
   display: flex;
   flex-direction: column;
@@ -221,7 +143,6 @@ a{
     }
   }
 }
-
 .founded {
   background-image: url('./Media/counterbg.jpg');
   background-repeat: no-repeat;
@@ -257,8 +178,6 @@ a{
     // padding: 10px;
   }
 }
-
-
 .what {
   background-color: #18455D;
   background-image: url('./Media/04.png');
@@ -521,10 +440,11 @@ a{
   }
 
   .carousal-container {
+    display: flex;
+    justify-content: center;
     overflow: hidden;
   }
 }
-
 .contactus {
   .card1 {
     // background-color: #18455D;
@@ -548,23 +468,28 @@ a{
     overflow: hidden;
     border: 2px solid #18455D;
 }
-
-  // .rocicon {
-  //   color: #18455D;
-  //   background-color: white;
-  //   // border-color: 2px solid white;
-  //   border-radius: 50%;
-  //   padding: 10px;
-  //   border: 2px solid #18455D;
-  // }
   .contact-row{
     padding: 0px 35px;
   }
-
+.phonenumber{
+  width: 100%;
+  // padding: 25px 10px;
+  border: 1px solid lightgray !important;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+.PhoneInputInput{
+  height: 52px !important;
+  border: none !important;
+  &:focus{
+    outline: none !important;
+  }
+}
   .sendbutton{
       font-family: inherit;
       font-size: 18px;
-      background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
+      // background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
+      background-color: #18455D;
       color: white;
       padding: 0.8em 1.2em;
       display: flex;
@@ -741,7 +666,6 @@ a{
 
 
 }
-
 .footer {
   background-color: #18455D;
   background-image: url('./Media/04.png');
@@ -765,16 +689,18 @@ a{
 
     li {
 
-      font-weight: 400 !important;
+      font-weight: 500 !important;
+      a{
+        text-decoration: none !important;
+        color: white;
+      }
 
     }
   }
 }
-
 .navbar-toggler {
   background-color: white !important;
 }
-
 .aboutus {
   color: #18455D;
 
@@ -783,6 +709,8 @@ a{
     flex-direction: column;
     justify-content: center;
   }
+
+
 
   span {
     position: relative;
@@ -874,62 +802,6 @@ a{
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 }
-
-.web {
-  color: #18455D;
-
-  .webdesign {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.digital {
-  color: #18455D;
-
-  .webdesign {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.content {
-  color: #18455D;
-
-  .webdesign {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.graphic {
-  color: #18455D;
-
-  .webdesign {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.hrsolution {
-  color: #18455D;
-
-  .webdesign {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 .chooseus {
   background-image: url('./Media/whychooseus.jpg');
   background-repeat: no-repeat;
@@ -1069,7 +941,6 @@ a{
     overflow: hidden;
   }
 }
-
 .workingprocedure {
   // background-color: #18455D; #072A40
   color: #18455D;
@@ -1297,7 +1168,6 @@ a{
     font-weight: 700 !important;
   }
 }
-
 .feedback {
   background-color: #18455D;
   background-image: url('./Media/04.png');
@@ -1361,12 +1231,11 @@ a{
   }
   img{
     border-radius: 50%;
-    width:150px;
+    width:100px;
   }
 
   
 }
-
 .react-faq{
   .styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -1377,6 +1246,31 @@ a{
   .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY .styles_row-title-text__1MuhU{
     font-weight: 600;
   }
+}
+
+/* ScrollToTopButton.css */
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s;
+  z-index: 500;
+}
+
+.scroll-to-top-button.visible {
+  display: block;
+}
+
+.scroll-to-top-button:hover {
+  background-color: white;
+  color: #18455d;
 }
 
 @media screen and (max-width: 600px) {
@@ -1499,6 +1393,11 @@ a{
     img{
       width: 100px !important;
 
+    }
+  }
+  .workingprocedure{
+    .processline{
+      display: none !important;
     }
   }
 }

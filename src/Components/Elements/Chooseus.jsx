@@ -58,7 +58,7 @@ function Chooseus() {
 
             </div>
             <div className="row">
-              <div className="carousal-container">
+              <div className="carousal-container ">
                 <Carousel
                   ref={carouselRef}
                   responsive={responsive}
@@ -92,7 +92,7 @@ function Chooseus() {
                   <div class="card "  >
                     <div class="card-body">
                       <h5 class="card-title"><img src="/Assets/content1.png" alt="webicon" /></h5>
-                      <h4 class="card-subtitle my-2 text-muted">Content Writiong</h4>
+                      <h4 class="card-subtitle my-2 text-muted">Content Writing</h4>
                       <p class="card-text">Engage your audience with compelling and tailored content. Our skilled writers create content that resonates with your brand, conveying your message effectively across various platforms</p>
                     </div>
                   </div>
