@@ -14,11 +14,11 @@ function Footer() {
       <div className="container-fluid text-center px-5 pt-5">
         <div className="row d-flex justify-content-around">
         <div className="col-md-3 text-start">
-          <div>
+          <div >
             <img
-              src="/Assets/Logo-white-word-PNG.png"
+              src="/Assets/tech-talk-white.png"
               alt="logo"
-              className="img-fluid mb-4 "
+              className="img-fluid mb-4"
               style={{ width: "200px" }}
             />
           </div>
@@ -30,7 +30,7 @@ function Footer() {
             </h5>
           </div>
         </div>
-          <div className="col-md-2 text-start ">
+          <div className="col-md-2 text-start mt-4">
             <h4>COMPANY</h4>
             <ul className="list-unstyled " style={{ lineHeight: 2.8 }}>
               <li ><a href='#hero'>Home</a></li>
@@ -39,7 +39,7 @@ function Footer() {
               <li><a href='#contactus'>Contact Us</a></li>
             </ul>
           </div>
-          <div className="col-md-3 text-start ">
+          <div className="col-md-3 text-start mt-4">
             <h4>SERVICES</h4>
             <ul className="list-unstyled " style={{ lineHeight: 2.8 }}>
               <li>Web & Mobile Development</li>
@@ -50,7 +50,7 @@ function Footer() {
               <li>SEO</li>
             </ul>
           </div>
-          <div className="col-md-3 text-start ">
+          <div className="col-md-3 text-start mt-4">
             <h4>CONTACT</h4>
             <ul className="list-unstyled " style={{ lineHeight: 2.8 }}>
               <li><RiUserLocationFill size={"35px"} /> Islamabad</li>
