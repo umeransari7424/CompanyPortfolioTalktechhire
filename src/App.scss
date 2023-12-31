@@ -1258,18 +1258,18 @@
   border-radius: 50%;
   cursor: pointer;
   display: none;
-  transition: opacity 0.3s;
+  transition: opacity 0.7s;
   z-index: 500;
+  
+  &:hover {
+    background-color: white;
+    color: #18455d;
+  }
 }
-
-.scroll-to-top-button.visible {
+.visible {
   display: block;
 }
 
-.scroll-to-top-button:hover {
-  background-color: white;
-  color: #18455d;
-}
 
 @media screen and (max-width: 600px) {
   .herobtn {
